@@ -19,7 +19,7 @@ const enviarDatos = async (obj) => {
       console.log("datos enviados correctamente, id: ", res.id);
       showSection("section-0")
       Swal.fire(
-        'Good job!',
+        'enviado!',
         `Datos enviados correctamente con id: ${res.id} `,
         'success'
       )

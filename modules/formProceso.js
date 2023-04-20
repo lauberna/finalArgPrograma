@@ -4,6 +4,8 @@ let inpEvento = document.getElementById("inpEvento");
 let inpCantH = document.getElementById("inpCantH");
 let inpFecha = document.getElementById("inpFecha");
 let send = document.getElementById("enviarBtn");
+let err = document.getElementById("err2")
+err.style.opacity = 0;
 
 import { hide } from "./booking.js";
 
@@ -93,6 +95,11 @@ export default function getForm1() {
       },500);
       hide()
       return consulta;
+    }else{
+      err.style.opacity = 1;
+      setTimeout(() => {
+        err.style.opacity = 0;
+      },1000);
     }
   }
 

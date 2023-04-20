@@ -167,12 +167,6 @@ body {
   display: inline-block;
   border: none;
   background: rgb(208, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(208, 0, 0, 0.6460959383753502) 0%,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(0, 15, 193, 0.6797093837535014) 100%
-  );
   color: white;
   padding: 7px 13px;
   font-size: 14px;
@@ -230,6 +224,13 @@ body {
 #tittleMain {
   color: white;
   font-size: 35px;
+}
+.year{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 20px;
+  opacity: .6;
 }
 
 /* CONTENIDO SECCION 1 */
@@ -310,7 +311,7 @@ body {
   cursor: text;
   background-color: transparent;
   border: none;
-  border: solid 0.5px rgba(255, 255, 255, 0.4);
+  border: solid 0.5px rgba(255, 255, 255, 0.2);
   width: 300px;
   font-size: 16px;
   text-align: center;
@@ -340,6 +341,23 @@ body {
 .div1 > p {
   opacity: 0.5;
   font-size: 14px;
+}
+
+.errForm1{
+  color: red;
+  font-size: 13px;
+  position: absolute;
+  bottom: 200px;
+  opacity: 0px;
+  transition: opacity .5s;
+}
+.errForm2{
+  color: red;
+  font-size: 13px;
+  position: absolute;
+  bottom: -50px;
+  opacity: 0px;
+  transition: opacity .5s;
 }
 /* CONTENIDO SECCION 3 */
 

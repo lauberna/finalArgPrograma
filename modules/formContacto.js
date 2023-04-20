@@ -3,8 +3,8 @@ let inpMail = document.getElementById("inpMail");
 let inpTel = document.getElementById("inpTel");
 let inpMsj = document.getElementById("inpMsj");
 let send = document.getElementById("enviar");
-
-
+let err = document.getElementById("err1");
+err.style.opacity = "0";
 import enviarDatos from "./enviarDatos.js";
 
 //expresiones regulares para validar
@@ -17,11 +17,10 @@ export default function getForm() {
     if (regexNombre.test(inpName.value)) {
       inpName.classList.remove("err");
       inpName.classList.add("pass");
-      
       return true;
     } else {
-      inpName.classList.add("err");
       inpName.classList.remove("pass");
+      err.style.display = "block";
       return false;
     }
   }
@@ -77,16 +76,22 @@ export default function getForm() {
         inpMsj.value
       );
       enviarDatos(consulta);
-      setTimeout(function(){
-        inpMail.value = ""
-        inpMsj.value = ""
-        inpName.value = ""
-        inpTel.value = ""
-      },500)
+      setTimeout(function () {
+        inpMail.value = "";
+        inpMsj.value = "";
+        inpName.value = "";
+        inpTel.value = "";
+      }, 500);
+
       return consulta;
+    } else {
+      err.style.opacity = 1;
+      setTimeout(() => {
+        err.style.opacity = 0;
+      },1000);
     }
   }
-  
+
   function Consulta(nombre, mail, telefono, mensaje) {
     this.nombre = nombre;
     this.mail = mail;
@@ -99,4 +104,3 @@ export default function getForm() {
     validarForm();
   });
 }
-
