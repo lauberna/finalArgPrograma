@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <title>INMINENT</title>
+  </head>
+  <body>
+    <div id="mod"></div>
+    <header>
+      <nav id="navContainer">
+        <ul id="navbar"></ul>
+      </nav>
+    </header>
+    <div id="btnNav">
+      <img src="./assets/images/icons8-menú-100.png" class="navBtn" id="btn" />
+    </div>
+    <main id="main" class="">
+      <section id="section-0" style class="section none">
+        <div class="contenedor0" id="cont0">
+          <img
+            src="./assets/images/PNG INMINENT/INMINENT-17.png"
+            id="logoMain"
+          />
+          <h1 id="tittleMain">INMINENT</h1>
+          <button class="button" id="booking">Booking</button>
+        </div>
+        <div class="formContainer none" id="container">
+          <form id="modForm2">
+            <p class="exit" id="exit">X</p>
+            <label id="label" for="nombre">Nombre</label>
+            <input
+              class="inp"
+              id="inpName1"
+              type="text"
+              placeholder="Ingrese su nombre aqui"
+              name="nombre"
+              required
+            />
+            <label id="label" for="mail">Mail</label>
+            <input
+              class="inp"
+              id="inpMail1"
+              type="text"
+              placeholder="Ingrese su mail aqui"
+              name="mail"
+              required
+            />
+            <label id="label" for="evento">Tipo de evento</label>
+            <input
+              class="inp"
+              id="inpEvento"
+              type="text"
+              placeholder="cantidad de horas"
+              name="evento"
+              required
+            />
+            <label id="label" for="cantH">Cantidad de horas</label>
+            <input
+              class="inp"
+              id="inpCantH"
+              type="number"
+              min="0"
+              max="6"
+              placeholder="cantidad de horas"
+              name="cantH"
+              required
+            />
+            <label id="label" for="fecha">Fecha</label>
+            <input
+              class="inp"
+              id="inpFecha"
+              type="datetime-local"
+              placeholder="fecha"
+              name="fecha"
+              required
+            />
+            <button type="button" class="button" id="enviarBtn">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <section id="section-1" style class="section none">
+        <div class="pres">
+          <h1>Acerca de nosotros</h1>
+          <p>
+            Con origen en latín, immînens que produce de imminēre (“amenazar”)
+            representa la llegada de nuevas frecuencias y melodías que atentan
+            contra la estructura tradicional de la música, generando así un
+            ambiente hostil acompañado por ondas sonoras agresivas.
+          </p>
+          <p>
+            Nos presentamos como un dúo inminente formado por Facundo Zareba y
+            Laureano Berná procedente de la ciudad Mendoza - Argentina que busca
+            introducirse en la escena de la música electrónica local con
+            objetivos y expectativas cada vez más altos.
+          </p>
+          <div class="audioC">
+            <p>Inminent - The Realm Of The Angels</p>
+            <audio
+              src="./INMINENT - The Realm of The Angels copy.wav"
+              controls
+            ></audio>
+          </div>
+        </div>
+      </section>
+      <section id="section-2" style class="section none">
+        <div class="contact">
+          <img src="./assets/images/DSC02372 1-2.jpg" class="borr" />
+          <div class="div1">
+            <h1>Contact Us</h1>
+            <p>inminentbooking@gmail.com</p>
+          </div>
+          <form id="formC">
+            <label id="label" for="nombre">Nombre</label>
+            <input
+              class="inp"
+              id="inpName"
+              type="text"
+              placeholder="Ingrese su nombre aqui"
+              name="nombre"
+              required
+            />
+            <label id="label" for="mail">Mail</label>
+            <input
+              class="inp"
+              id="inpMail"
+              type="text"
+              placeholder="Ingrese su mail aqui"
+              name="mail"
+              required
+            />
+            <label id="label" for="telefono">Telefono</label>
+            <input
+              class="inp"
+              id="inpTel"
+              type="text"
+              placeholder="Ingrese su telefono aqui"
+              name="mail"
+              required
+            />
+            <label id="label" for="msj">Mensaje</label>
+            <textarea
+              class="inp"
+              name="msj"
+              id="inpMsj"
+              cols="30"
+              rows="5"
+              placeholder="ingrese su mensaje aqui"
+              required
+            ></textarea>
+            <button type="button" class="button" id="enviar">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <section id="section-3" style class="section none">
+        <div class="cont">
+          <h2>Last Dj Set</h2>
+          <iframe
+            class="video"
+            width="1080"
+            height="620"
+            src="https://www.youtube.com/embed/OkRHll5jW38"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <div id="redesCont"></div>
+    </main>
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    
+    <script src="./assets/js/app.js" type="module"></script>
+
+  </body>
+</html>
