@@ -3,6 +3,7 @@ let form = document.getElementById("modForm2");
 let formC = document.getElementById("container");
 let cont = document.getElementById("cont0");
 let btnSalir = document.getElementById("exit");
+let send = document.getElementById("enviarBtn");
 form.style.opacity = 0;
 export default function booking() {
   btn.addEventListener("click", function () {
@@ -22,4 +23,11 @@ export default function booking() {
     form.style.opacity = 0;
     btn.style.display = "block";
   });
+}
+export function hide(){
+  formC.classList.add("none");
+  cont.style.filter = "blur(0px)";
+  cont.style.opacity = 1;
+  form.style.opacity = 0;
+  btn.style.display = "block";
 }

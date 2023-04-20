@@ -77,6 +77,12 @@ export default function getForm() {
         inpMsj.value
       );
       enviarDatos(consulta);
+      setTimeout(function(){
+        inpMail.value = ""
+        inpMsj.value = ""
+        inpName.value = ""
+        inpTel.value = ""
+      },500)
       return consulta;
     }
   }

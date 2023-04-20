@@ -9,7 +9,7 @@ export default function navBar() {
 
   function createLinks() {
     //CREO LOS LINK DE NAVEGACION
-    let navPoints = ["Home", "About Us", "Contact Us", "Music"];
+    let navPoints = ["Home", "Acerca de", "Contactanos", "Musica"];
     navPoints.forEach((element, index) => {
       let li = document.createElement("li");
       li.classList.add(`element`);

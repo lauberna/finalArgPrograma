@@ -5,6 +5,8 @@ let inpCantH = document.getElementById("inpCantH");
 let inpFecha = document.getElementById("inpFecha");
 let send = document.getElementById("enviarBtn");
 
+import { hide } from "./booking.js";
+
 //expresiones regulares para validar
 const regexNombre = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
 const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -74,8 +76,30 @@ export default function getForm1() {
         inpEvento.value,
         inpCantH.value
       );
-
+      Swal.fire("Succes!", `Datos enviados correctamente, recibira una respuesta en las proximas horas`, "success");
+      let doc = new jsPDF()
+      doc.text(20,20, "nombre: " + consulta.nombre)
+      doc.text(20,30, "mail: " + consulta.mail)
+      doc.text(20,40, "evento: " + consulta.evento)
+      doc.text(20,50, "cantidad de horas: " + consulta.horas)
+      doc.text(20,60, "fecha: " + consulta.fecha)
+      doc.save("consulta.pdf")
+      setTimeout(function () {
+        inpCantH.value = "";
+        inpEvento.value = "";
+        inpFecha.value = "";
+        inpMail.value = "";
+        inpName.value = "";
+      },500);
+      hide()
       return consulta;
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "datos incorrectos",
+        icon: "error",
+        confirmButtonText: "Cool",
+      });
     }
   }
 
@@ -90,9 +114,5 @@ export default function getForm1() {
   send.addEventListener("click", function (e) {
     e.preventDefault();
     validarForm();
-    let doc = new jsPDF();
-    console.log(doc);
-    doc.text(validarForm(), 10, 10);
-    doc.save("consulta.pdf");
   });
 }
