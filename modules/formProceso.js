@@ -93,13 +93,6 @@ export default function getForm1() {
       },500);
       hide()
       return consulta;
-    } else {
-      Swal.fire({
-        title: "Error!",
-        text: "datos incorrectos",
-        icon: "error",
-        confirmButtonText: "Cool",
-      });
     }
   }
 
