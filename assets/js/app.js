@@ -1,16 +1,12 @@
+/* import { carousel } from "../../modules/Carousel.js"; */
 import navBar from "../../modules/navBar.js";
-import modalNav from "../../modules/modalNav.js";
-import getForm from "../../modules/formContacto.js";
-import booking from "../../modules/booking.js";
-import getForm1 from "../../modules/formProceso.js";
-
+import validateForm from "../../modules/validateForm.js";
+import { sections } from "../../modules/sections.js";
+import { createElements } from "../../modules/redes.js";
 
 function appInit() {
   navBar();
-  modalNav();
-  getForm();
-  booking()
-  getForm1()
+  sections();
+  validateForm();
 }
 appInit();
-

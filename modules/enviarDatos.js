@@ -1,12 +1,9 @@
 import {
   addDoc,
-  getFirestore,
   collection,
 } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
-import app from "./firebaseConfig.js";
 import { showSection } from "./sections.js";
-
-const db = getFirestore(app);
+import { db } from "./firebaseConfig.js";
 
 const enviarDatos = async (obj) => {
   await addDoc(collection(db, "Consultas"), {
@@ -17,22 +14,21 @@ const enviarDatos = async (obj) => {
   })
     .then((res) => {
       console.log("datos enviados correctamente, id: ", res.id);
-      showSection("section-0")
+      showSection("section-0");
       Swal.fire(
-        'enviado!',
+        "enviado!",
         `Datos enviados correctamente con id: ${res.id} `,
-        'success'
-      )
-      
+        "success"
+      );
     })
     .catch((err) => {
       console.log(err);
       Swal.fire({
-        title: 'Error!',
-        text: 'algo salio mal',
-        icon: 'error',
-        confirmButtonText: 'Cool'
-      })
+        title: "Error!",
+        text: "algo salio mal",
+        icon: "error",
+        confirmButtonText: "Cool",
+      });
     });
 };
 
