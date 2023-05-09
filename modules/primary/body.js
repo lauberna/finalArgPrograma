@@ -1,10 +1,10 @@
-import { createElements } from './redes.js';
-import carousel from './Carousel.js';
+import { createElements } from '../socialMedia.js';
+import carousel from '../carousel.js';
 import { hide } from './navBar.js';
 function sections() {
   showSection('section-0');
   createElements('sectionRed');
-  carousel();
+/*   carousel(); */
 }
 
 let section = document.getElementsByClassName('section');

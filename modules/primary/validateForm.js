@@ -1,4 +1,4 @@
-import enviarDatos from "./enviarDatos.js";
+import enviarDatos from "../sendData.js";
 let inpName = document.getElementById("inpName");
 let inpMail = document.getElementById("inpMail");
 let inpTel = document.getElementById("inpTel");

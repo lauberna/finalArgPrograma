@@ -2,8 +2,8 @@ import {
   addDoc,
   collection,
 } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
-import { showSection } from "./sections.js";
-import { db } from "./firebaseConfig.js";
+import { showSection } from "./primary/body.js";
+import { db } from "../config/firebaseConfig.js";
 
 const enviarDatos = async (obj) => {
   await addDoc(collection(db, "Consultas"), {

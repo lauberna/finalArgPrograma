@@ -1,12 +1,12 @@
-import { click } from './sections.js';
-import { createElements } from './redes.js';
+import { click } from './body.js';
+import { createElements } from '../socialMedia.js';
 
 export default function navBar() {
   let navbar = document.getElementById('navbar');
   let links = document.getElementsByClassName('element');
 
   function createLinks() {
-    let navPoints = ['Home', 'Acerca de', 'Contactanos', 'Musica'];
+    let navPoints = ['Home', 'Acerca de', 'Contactanos', 'Fotos'];
     navPoints.forEach((element, index) => {
       let li = document.createElement('li');
       li.classList.add(`element`);

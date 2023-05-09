@@ -1,5 +1,5 @@
 export default function carousel() {
-
+/* 
   let imageSources = [
     "../assets/images/DSC02305 1.jpg",
     "../assets/images/DSC02320 1.jpg",
@@ -22,5 +22,5 @@ export default function carousel() {
   for(let i = 1; i< imageSources.length; i++){
     let btn = document.createElement("button")
     ind.appendChild(btn)
-  }
+  } */
 }
