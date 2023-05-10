@@ -177,14 +177,12 @@ body {
 
 
 #section-1 {
-  height: 100%;
-  width: 100%;
-  position: fixed;
   background-image: url(../images/DSC02364\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  position: fixed;
 }
 .pres {
   font-size: 16px;
@@ -206,7 +204,6 @@ body {
 
 #section-2 {
   height: 100vh;
-  max-height: 100vh;
   width: 100vw;
   background-size: 100%;
   background-position-y: -40px;
@@ -216,19 +213,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  border: solid red 1px;
 }
-
-.borr {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  filter: blur(60px);
-}
-
 #formC {
   display: flex;
   flex-direction: column;
@@ -276,14 +261,13 @@ body {
 }
 
 .contact {
-  height: 100vh;
-  max-height: 100vh;
+  height: 100%;
+  max-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  border: solid red 1px;
 }
 .div1 {
   display: flex;
