@@ -90,6 +90,19 @@ body {
 }
 /* MAIN */
 
+.none {
+  display: none;
+}
+#main {
+  transition: filter 0.8s;
+}
+#redesCont {
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  bottom: 12px;
+  gap: 25px;
+}
 
 /* SECCIONES */
 
