@@ -203,7 +203,7 @@ body {
 }
 
 
-/* #section-2 {
+#section-2 {
   height: 100%;
   width: 100%;
   background-size: 100%;
@@ -307,7 +307,7 @@ body {
 }
 
 
-#section-3 {
+/* #section-3 {
   background-image: url(../images/DSC02305\ 1.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
