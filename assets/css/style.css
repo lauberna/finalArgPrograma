@@ -6,6 +6,8 @@
 }
 body {
   background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
 }
 /* HEADER */
 #navContainer {
@@ -88,21 +90,6 @@ body {
 }
 /* MAIN */
 
-.none {
-  display: none;
-}
-#main {
-  width: 100vw;
-  height: 100vh;
-  transition: filter 0.8s;
-}
-#redesCont {
-  width: 100%;
-  justify-content: center;
-  position: fixed;
-  bottom: 12px;
-  gap: 25px;
-}
 
 /* SECCIONES */
 
@@ -184,14 +171,10 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-/* .giro {
-  rotate: 180deg;
-  transition: 0.5s;
-} */
 
 /* CONTENIDO SECCION 1 */
 
-#section-1 {
+/* #section-1 {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -216,9 +199,9 @@ body {
   width: 50%;
   text-align: center;
   font-size: 14px;
-}
+} */
 /* CONTENIDO SECCION 2 */
-
+/* 
 #section-2 {
   height: 100%;
   width: 100%;
@@ -240,10 +223,10 @@ body {
   min-height: 100%;
   z-index: -1;
   filter: blur(60px);
-}
+} */
 
 /* FORMULARIO */
-#formC {
+/* #formC {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -321,24 +304,6 @@ body {
   bottom: 200px;
   opacity: 0px;
   transition: opacity 0.5s;
-}
+} */
 /* CONTENIDO SECCION 3 */
 
-#section-3 {
-  background-image: url(../images/DSC02305\ 1.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
-.imgCarousel {
-  width: 35%;
-}
-
-#carousel {
-  position: relative;
-  top: 200px;
-  bottom: 200px;
-}
