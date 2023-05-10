@@ -27,25 +27,28 @@
       <nav id="navContainer">
         <ul id="navbar"></ul>
       </nav>
+      <div id="btnNav">
+        <img src="./assets/images/icons8-menú-100.png" class="navBtn" id="btn" />
+      </div>
     </header>
-    <div id="btnNav">
-      <img src="./assets/images/icons8-menú-100.png" class="navBtn" id="btn" />
-    </div>
     <main id="main" class="">
       <section id="section-0" style class="section none">
         <div class="contenedor0" id="cont0">
-          <img
-            src="./assets/images/PNG INMINENT/INMINENT-17.png"
-            id="logoMain"
-          />
-          <h1 id="tittleMain">INMINENT</h1>
-          <button class="button" id="booking">
-            <a
-              class="youtube"
-              href="https://www.youtube.com/channel/UC5juotgYc3BcjlQOZ6gJsdQ"
-              >Escuchanos</a
-            >
-          </button>
+          <div class="imgCenter">
+            <img
+              src="./assets/images/PNG INMINENT/INMINENT-15.png"
+              id="logoMain"
+            />
+          </div>
+          <div class="btnCenter">
+            <button class="button" id="booking">
+              <a
+                class="youtube"
+                href="https://www.youtube.com/channel/UC5juotgYc3BcjlQOZ6gJsdQ"
+                >Escuchanos</a
+              >
+            </button>
+          </div>
         </div>
       </section>
       <section id="section-1" style class="section none">
@@ -56,8 +59,7 @@
             representa la llegada de nuevas frecuencias y melodías que atentan
             contra la estructura tradicional de la música, generando así un
             ambiente hostil acompañado por ondas sonoras agresivas.
-          </p>
-          <p>
+            <br><br>
             Nos presentamos como un dúo inminente formado por Facundo Zareba y
             Laureano Berná procedente de la ciudad Mendoza - Argentina que busca
             introducirse en la escena de la música electrónica local con
@@ -66,21 +68,21 @@
         </div>
       </section>
       <section id="section-2" style class="section none">
+        <img src="./assets/images/DSC02341 1.jpg" class="borr" />
         <div class="contact">
-          <img src="./assets/images/DSC02341 1.jpg" class="borr" />
+          <div class="div1">
+            <h1>CONTACTANOS</h1>
+            <p>inminentbooking@gmail.com</p>
+          </div>
           <form
             method="post"
             action="mailto:laureanoberna2002@gmail.com"
             enctype="text/plain"
             id="formC"
           >
-            <div class="div1">
-              <h1>Contactanos</h1>
-              <p>inminentbooking@gmail.com</p>
-            </div>
             <label id="label" for="nombre">Nombre</label>
             <input
-              class="inp"
+              class="inp1 inp"
               id="inpName"
               type="text"
               placeholder="Ingrese su nombre aqui"
@@ -89,7 +91,7 @@
             />
             <label id="label" for="mail">Mail</label>
             <input
-              class="inp"
+              class="inp1 inp"
               id="inpMail"
               type="text"
               placeholder="Ingrese su mail aqui"
@@ -98,21 +100,21 @@
             />
             <label id="label" for="telefono">Telefono</label>
             <input
-              class="inp"
+              class="inp1 inp"
               id="inpTel"
               type="text"
               placeholder="Ingrese su telefono aqui"
               name="mail"
               required
             />
-            <label id="label" for="msj">Mensaje</label>
+            <label id="label" for="msj">Consulta</label>
             <textarea
-              class="inp"
+              class="inp1 inp"
               name="msj"
               id="inpMsj"
               cols="30"
               rows="2"
-              placeholder="ingrese su mensaje aqui"
+              placeholder="ingrese su consulta aqui"
               required
             ></textarea>
             <p class="errForm1" id="err1">Complete los datos correctamente</p>

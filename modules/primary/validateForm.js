@@ -11,7 +11,7 @@ err.style.opacity = "0";
 const regexNombre = /^[a-zA-ZÀ-ÿ\s]{3,40}$/;
 const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const regexTelefono = /^\d{9,14}$/;
-const regexMsj = /^.{15,40}$/;
+const regexMsj = /^.{15,100}$/;
 
 export default function validateForm() {
   function validate(input, regex) {
@@ -26,14 +26,13 @@ export default function validateForm() {
       return false;
     }
   }
-
+  
   function allTrue() {
-    if (
-      validate("inpName", regexNombre) &&
-      validate("inpMail", regexEmail) &&
-      validate("inpTel", regexTelefono) &&
-      validate("inpMsj", regexMsj)
-    ) {
+    let trueName = validate("inpName", regexNombre)
+    let trueMail =  validate("inpMail", regexEmail)
+    let trueTel = validate("inpTel", regexTelefono)
+    let trueMsj = validate("inpMsj", regexMsj)
+    if (trueName && trueMail && trueTel && trueMsj) {
       return true;
     }
     return false;

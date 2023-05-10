@@ -7,10 +7,10 @@ export default function navBar() {
 
   function createLinks() {
     let navPoints = ['Home', 'Acerca de', 'Contactanos', 'Fotos'];
-    navPoints.forEach((element, index) => {
+    navPoints.forEach((element, i) => {
       let li = document.createElement('li');
       li.classList.add(`element`);
-      li.setAttribute('data-section', `section-${index}`);
+      li.setAttribute('data-section', `section-${i}`);
       li.setAttribute('id', element.replace(/\s+/g, ''));
       li.textContent = element;
       navbar.appendChild(li);

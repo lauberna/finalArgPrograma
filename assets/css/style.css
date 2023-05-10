@@ -3,14 +3,11 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  cursor: default;
 }
 body {
   background-color: rgb(0, 0, 0);
 }
-
 /* HEADER */
-
 #navContainer {
   width: 100vw;
   height: 100vh;
@@ -19,6 +16,7 @@ body {
   z-index: 10;
   transition: opacity 0.5s;
 }
+
 #navbar {
   list-style: none;
   height: 100%;
@@ -36,7 +34,7 @@ body {
   transition: all 0.1s;
 }
 .element {
-  font-size: 20px;
+  font-size: 16px;
   opacity: 0.6;
   text-decoration: none;
   border-bottom: 0.5px solid transparent;
@@ -46,17 +44,14 @@ body {
 .noneNav {
   display: none;
 }
-
-/*Redes sociales nav */
-
 .redes {
-  width: 15%;
+  width: 43%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 .red {
-  width: 25px;
+  width: 19px;
   opacity: 0.8;
   transition: transform 0.2s;
 }
@@ -66,51 +61,22 @@ body {
   opacity: 1;
   transition: all 0.2s;
 }
-
-/* Boton apra abrir nav */
-
-.prov {
-  margin-top: 3px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-.pais {
-  margin-top: 3px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-
 #btnNav {
   position: absolute;
   padding-bottom: 20px;
   display: flex;
   width: 100%;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 12px;
   z-index: 10;
 }
 .navBtn {
-  height: 20px;
+  height: 18px;
   transition: rotate 0.5s;
 }
 .navBtn:hover {
   cursor: pointer;
 }
-
-/* MAIN */
-
-.none {
-  display: none;
-}
-
-#main {
-  width: 100vw;
-  height: 100vh;
-  transition: filter 0.8s;
-}
-
-/* Modal que cubre la pantalla al abrir el menu */
-
 #mod {
   background-color: rgb(0, 0, 0);
   position: absolute;
@@ -120,90 +86,91 @@ body {
   transition: opacity 0.5s;
   z-index: 10;
 }
+/* MAIN */
 
-/* REDES MAIN */
-
+.none {
+  display: none;
+}
+#main {
+  width: 100vw;
+  height: 100vh;
+  transition: filter 0.8s;
+}
 #redesCont {
   width: 100%;
-  display: flex;
   justify-content: center;
-  position: absolute;
-  bottom: 10px;
-  gap: 15px;
+  position: fixed;
+  bottom: 12px;
+  gap: 25px;
 }
 
 /* SECCIONES */
-.section {
+
+/* .section {
   height: 100%;
   width: 100%;
-}
+} */
 
 /* CONTENIDO SECCION 0 */
 
-/* #section-0 {
+#section-0 {
   background-image: url(../images/DSC02320\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-} */
-.contenedor0 {
-  background-image: url(../images/DSC02320\ 1.jpg);
+  height: 100%;
+  width: 100%;
   position: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+}
+.contenedor0 {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   filter: blur(0px);
   transition: filter 0.5s;
 }
+.imgCenter {
+  height: 60%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.btnCenter{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#booking{
+  margin-bottom: 15%;
+}
 .button {
-  position: relative;
-  top: 10%;
   display: inline-block;
   border: none;
   background: rgb(208, 0, 0);
-  color: white;
-  padding: 7px 13px;
-  font-size: 14px;
+  padding: 6px 12px;
+  font-size: 11px;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
   letter-spacing: 1px;
   transition: background-color 0.2s ease;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
   z-index: 1;
 }
-
 .button:hover {
   background-color: #ff5454;
 }
-
 .button:active {
   background-color: #7d0000;
 }
-.formContainer {
-  position: relative;
-  bottom: 85%;
-}
-#modForm2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  bottom: 50%;
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-
 .exit {
   position: absolute;
   top: -50px;
@@ -211,99 +178,22 @@ body {
 }
 
 #logoMain {
-  height: 10%;
-}
-#tittleMain {
-  color: white;
-  font-size: 35px;
-}
-.year {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  font-size: 20px;
-  opacity: 0.6;
+  height: 35%;
 }
 .youtube {
   cursor: pointer;
   text-decoration: none;
 }
-.audio1 {
-  z-index: 10;
-}
-#rec {
-  font-size: 13px;
-  display: flex;
-  padding-left: 10px;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  top: 15%;
-  opacity: 0.6;
-  left: -250px;
-  width: 200px;
-  height: 30px;
-  background-color: rgba(0, 0, 0, 0.295);
-  transition: left 0.5s;
-  gap: 8px;
-  transition: opacity 0.5s;
-  cursor: pointer;
-}
-#rec > a {
-  text-decoration: none;
-  cursor: pointer;
-}
-#rec > a > p {
-  cursor: pointer;
-}
-
-#arrow {
-  text-decoration: none;
-  cursor: pointer;
-}
-#rec1 {
-  font-size: 13px;
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  bottom: 15%;
-  opacity: 0.6;
-  width: 100px;
-  height: 30px;
-  background-color: rgba(0, 0, 0, 0.295);
-  transition: right 0.5s;
-  transition: opacity 0.5s;
-  gap: 8px;
-}
-
-#rec:hover {
-  opacity: 1;
-  transition: 0.5s;
-}
-#rec1:hover {
-  opacity: 1;
-  transition: 0.5s;
-}
-#descarga {
-  text-decoration: none;
-  cursor: pointer;
-}
-#arrowInv {
-  rotate: 180deg;
-}
-.giro {
+/* .giro {
   rotate: 180deg;
   transition: 0.5s;
-}
+} */
 
-#arrow {
-  rotate: 0;
-  transition: 0.5s;
-}
 /* CONTENIDO SECCION 1 */
 
 #section-1 {
+  height: 100%;
+  width: 100%;
   position: fixed;
   background-image: url(../images/DSC02364\ 1.jpg);
   background-repeat: no-repeat;
@@ -312,12 +202,12 @@ body {
   background-attachment: fixed;
 }
 .pres {
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   height: 100%;
   width: 100%;
 }
@@ -325,11 +215,13 @@ body {
 .pres > p {
   width: 50%;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
 }
 /* CONTENIDO SECCION 2 */
 
 #section-2 {
+  height: 100%;
+  width: 100%;
   background-size: 100%;
   background-position-y: -40px;
   background-position-x: 0px;
@@ -352,14 +244,16 @@ body {
 
 /* FORMULARIO */
 #formC {
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 70px;
   gap: 20px;
+}
+#enviar{
+  margin-top: 20px;
+  cursor: pointer;
 }
 .err {
   color: red;
@@ -369,37 +263,40 @@ body {
   color: rgb(255, 255, 255);
   transition: 0.5s;
 }
-
 #label {
-  font-size: 22px;
+  font-size: 20px;
+  opacity: 0.8;
 }
-.inp {
+#formC > textarea{
+  resize: none;
+}
+.inp{
+  margin-bottom: 5px;
   cursor: text;
   background-color: transparent;
   border: none;
-  border: solid 0.5px rgba(255, 255, 255, 0.2);
-  width: 27%;
-  height: 20px;
+  border-bottom: solid 0.5px rgba(255, 255, 255, 0.3);
   font-size: 16px;
   text-align: center;
   padding: 5px 0;
 }
-#inpMsj{
-  height: 30%;
+.inp1 {
+  width: 55%;
+  height: 20px;
 }
+
 .inp::placeholder {
-  font-size: 12px;
-  text-align: center;
+  font-size: 14px;
 }
 
 .contact {
   height: 100%;
   width: 100%;
   display: flex;
-  gap: 50px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 30px;
 }
 .div1 {
   display: flex;
@@ -410,8 +307,11 @@ body {
   margin-bottom: 2%;
 }
 .div1 > p {
-  opacity: 0.5;
+  opacity: 0.6;
   font-size: 14px;
+}
+.div1 > h1 {
+  font-size: 28px;
 }
 
 .errForm1 {
@@ -431,14 +331,13 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-
 }
 
-.imgCarousel{
+.imgCarousel {
   width: 35%;
 }
 
-#carousel{
+#carousel {
   position: relative;
   top: 200px;
   bottom: 200px;
