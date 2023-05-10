@@ -216,9 +216,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: solid red 1px;
 }
 
 .borr {
@@ -278,6 +276,8 @@ body {
 }
 
 .contact {
+  height: 100vh;
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
